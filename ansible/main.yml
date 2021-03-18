@@ -1,0 +1,8 @@
+#- name: Install_Docker
+#  import_playbook: provi_docker.yml
+
+- name: Register_GitLab_runner_app
+  import_playbook: gitlab-runner-app.yml
+
+- name: Register_GitLab_runner_monitoring
+  import_playbook: gitlab-runner-moni.yml

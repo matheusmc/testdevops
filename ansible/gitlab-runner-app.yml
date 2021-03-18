@@ -1,0 +1,6 @@
+- hosts: app
+  become: true
+  vars_files:
+    - vars/app.yml
+  roles:
+    - { role: riemers.gitlab-runner }
